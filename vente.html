@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="description" content="CLUB AUTO est un societer baser sur la vente et location de voiture">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Club Auto - Vente</title>
+        <link rel="icon" href="photo/icone-du-site.png">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/style.css">
+        
+    </head>
+    <body>
+        <header class="container-fluid" style="font-family:Montserrat;">
+
+            <!-- accessibility -->
+            <h1 class="accessibility">Menu principal</h1>
+            <p class="accessibility"><a href="#main" title="Accéder directement au contenu principal de cette page">Passer le menu</a></p>
+            <!-- fin accessibility -->
+
+            <!-- premiere barre du header -->
+            <section class="row  pt-4 pb-2" id="sectionHeader">
+
+                <div class=" row col-12 col-lg-2 d-lg-block offset-md-1 text-md-end mb-3 align-items-center">
+                    <h1 class="col-10 col-md-12 text-light fw-bold h2">CLUB AUTO</h1>
+                    <!-- botton tuggle en responssive -->
+                    <nav class="col-2 d-md-none navbar navbar-dark navbar-expand-lg" id="tuggleHeader" >
+                        <div class="container-fluid justify-content-end">
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#barredenav" aria-controls="barredenav" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse " id="barredenav">
+                            <ul class="navbar-nav me-auto mb-2 mb-lg-0 text-uppercase">
+                                <li class="nav-item">
+                                <a class="nav-link" href="index.html">accueil</a>
+                                </li>
+                                <li class="nav-item">
+                                <a class="nav-link" href="vente.html">vente</a>
+                                </li>
+                                <li class="nav-item">
+                                <a class="nav-link" href="location.html">location</a>
+                                </li>
+                                <li class="nav-item">
+                                <a class="nav-link" href="contact.html">contact</a>
+                                </li>
+                            </ul>
+                        </div>
+                        </div>
+                    </nav>
+                    <!-- fin button tuggle en responssive -->
+                </div>
+
+                <!-- div adresse du header -->
+                <div class="col-12 d-none col-lg-2 d-lg-block pe-0 text-uppercase text-light">
+                    <div class="d-flex">
+                        <img src="photo/icone-adresse.png" alt="icon-adresse" class="iconHeader" >
+                        <div >
+                            <p class="container-fluid m-0 fw-bold titreHeader">adresse :</p>
+                            <address class="container-fluid">
+                            <p>avenue charles de gaule <br>
+                            75000 paris</p>
+                            </address>
+                        </div>
+                    </div>
+                </div>
+                <!-- div pour le numero de telephone -->
+                <div class="col-12 col-lg-2  fw-bold text-uppercase text-light justify-content-lg-center d-flex">
+                    <img src="photo/icon-telephone.png" alt="icon-telephone" class="iconHeader">
+                    <div>
+                        <p class="container-fluid m-0 titreHeader">téléphone :</p>
+                        <p class="container-fluid fs-5">01 23 45 67 89</p>
+                    </div>
+                </div>
+                <!-- div pour les horaires d'ouverture -->
+                <div class="col-12 d-none col-lg-2 d-lg-block fw-bold text-uppercase text-light d-flex" id="divHoraire">
+                    <p class="titreHeader"> ouverture : <span class="text-capitalize"> Du Lundi au Samedi</span><br>
+                        horaires : <span class="text-capitalize"> De 9h à 17h</span>
+                    </p>
+                </div>
+                <!-- div pour les icons facebook et twiter -->
+                <div class="col-12 d-none col-lg-2 d-lg-block text-uppercase text-light" id="divIconsReseauxSociaux">
+                    <a href="#">
+                        <img src="photo/icon-fb.png" alt="icon-fb" class="px-2 iconHeader" >
+                    </a>
+                    <a href="#">
+                        <img src="photo/icon-tw.png" alt="icon-tw" class="px-2 iconHeader" >
+                    </a>
+                </div>
+            </section>
+            <!-- fin de la premiere barre du header -->
+        </header>
+
+        <!-- background img -->
+        <div class="container-fluid bg-image d-none d-md-block" id="divBackgroundImageVenteLocation"></div>
+        <!-- fin background img -->
+
+        <!-- barre de navigation -->
+        <div class="container-fluid d-none d-md-block" id="navVenteLocation">
+            <nav class="nav text-uppercase fw-semibold align-items-center bg-white bg-opacity-75" id="navVenteLocationNav">
+                <div class="nav-item offset-7" title="Retour à la page principal">
+                    <a href="index.html" class="nav-link nv pt-3 text-center nonSelectedpage">accueil</a>
+                </div>
+                <div class="nav-item " id="selectedPage" title="Vous-y etes">
+                    <a href="vente.html" class="nav-link nv pt-3 text-center" id="selectedPageselect">vente</a>
+                </div>
+                <div class="nav-item " title="Cliquer pour voir les locations">
+                    <a href="location.html" class="nav-link nv pt-3 text-center nonSelectedpage">location</a>
+                </div>
+                <div class="nav-item " title="Vers la page pour nous contacter">
+                    <a href="contact.html" class="nav-link nv pt-3 text-center nonSelectedpage">contact</a>
+                </div>
+            </nav>
+        </div>
+        <!-- fin de barre de navigation --> 
+        <!-- slogan dans l'image de fond -->
+        <div class="d-none d-md-block sloganBackgroundImage">
+            <h2 class="text-uppercase fw-bold h1">vente</h2>
+        </div>
+        <!-- fin du slogan dans l'image de fond -->
+        
+        <!-- background img en responssive -->
+        <div class="d-md-none sloganBackgroundImage">
+            <h2 class="text-uppercase fw-bold display-2 ms-5" id="sloganBackgroundImageH2">vente</h2>
+            <div class="container-fluid"></div>
+        </div>
+        <!-- fin background img en responssive -->
+
+        <main class="container-fluid">
+            <div class="row d-flex justify-content-center">
+                <!-- colone de gauche -->
+                <section class="col-10 col-md-7 order-2 order-md-0 mx-3">
+                    <!-- choix multiple -->
+                    <div id="choixMultiple" class="mt-4">
+                        <label for="selectvente" class="text-uppercase text-secondary">ordre :</label>
+                        <select name="select" id="selectvente" class="ms-3">
+                            <option value="1">Prix : Croissant</option>
+                            <option value="2">Prix : Décroissant</option>
+                        </select>
+                    </div>
+                    <!-- fin choix multiple -->
+
+                    <!-- liste de produits -->
+                    <div class="mt-5">
+                        <article class="row mt-5 pb-4 border-bottom">
+                            <div class="col-12 col-md-4">
+                                <a href="detailsvehicule.html" target="_blank">
+                                    <img src="photo/vehicule2.jpg" alt="photo du vehicule" class="img-fluid">
+                                </a>
+                            </div>
+                            <div class="col-12 col-md-8 divInfoListeProduit">
+                                <a href="detailsvehicule.html" target="_blank" class="m-md-0 divInfoListeProduitPrix">
+                                    <p class="fw-bold text-end pe-3 fs-4 mt-2">5 000&euro;</p>
+                                </a>
+                                <h3 class="h4 fw-bold mt-4 mt-md-0">BMW 535i, Navi, Leather, ABS</h3>
+                                <p class="divInfoListeProduitDescription">Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus ea cumque ratione, quidem neque maiores? Corrupti excepturi quam nisi similique? Voluptate optio voluptates dolore corporis fuga necessitatibus eligendi soluta veniam.</p>
+                                <a href="detailsvehicule.html" target="_blank" class="divInfoListeProduitEnsavoir" title="Cliquer pour en savoir plus">&raquo; En savoir plus &laquo;</a>
+                            </div>
+                        </article>
+                        <article class="row mt-5 pb-4 border-bottom">
+                            <div class="col-12 col-md-4">
+                                <a href="detailsvehicule.html" target="_blank">
+                                    <img src="photo/vehicule2.jpg" alt="photo du vehicule" class="img-fluid">
+                                </a>
+                            </div>
+                            <div class="col-12 col-md-8 divInfoListeProduit">
+                                <a href="detailsvehicule.html" target="_blank" class="m-md-0 divInfoListeProduitPrix">
+                                    <p class="fw-bold text-end pe-3 fs-4 mt-2">5 000&euro;</p>
+                                </a>
+                                <h3 class="h4 fw-bold mt-4 mt-md-0">BMW 535i, Navi, Leather, ABS</h3>
+                                <p class="divInfoListeProduitDescription">Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus ea cumque ratione, quidem neque maiores? Corrupti excepturi quam nisi similique? Voluptate optio voluptates dolore corporis fuga necessitatibus eligendi soluta veniam.</p>
+                                <a href="detailsvehicule.html" target="_blank" class="divInfoListeProduitEnsavoir" title="Cliquer pour en savoir plus">&raquo; En savoir plus &laquo;</a>
+                            </div>
+                        </article>
+                        <article class="row mt-5 pb-4 border-bottom">
+                            <div class="col-12 col-md-4">
+                                <a href="detailsvehicule.html" target="_blank">
+                                    <img src="photo/vehicule2.jpg" alt="photo du vehicule" class="img-fluid">
+                                </a>
+                            </div>
+                            <div class="col-12 col-md-8 divInfoListeProduit">
+                                <a href="detailsvehicule.html" target="_blank" class="m-md-0 divInfoListeProduitPrix">
+                                    <p class="fw-bold text-end pe-3 fs-4 mt-2">5 000&euro;</p>
+                                </a>
+                                <h3 class="h4 fw-bold mt-4 mt-md-0">BMW 535i, Navi, Leather, ABS</h3>
+                                <p class="divInfoListeProduitDescription">Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus ea cumque ratione, quidem neque maiores? Corrupti excepturi quam nisi similique? Voluptate optio voluptates dolore corporis fuga necessitatibus eligendi soluta veniam.</p>
+                                <a href="detailsvehicule.html" target="_blank" class="divInfoListeProduitEnsavoir" title="Cliquer pour en savoir plus">&raquo; En savoir plus &laquo;</a>
+                            </div>
+                        </article>
+                        <article class="row mt-5 pb-4 border-bottom">
+                            <div class="col-12 col-md-4">
+                                <a href="detailsvehicule.html" target="_blank">
+                                    <img src="photo/vehicule2.jpg" alt="photo du vehicule" class="img-fluid">
+                                </a>
+                            </div>
+                            <div class="col-12 col-md-8 divInfoListeProduit">
+                                <a href="detailsvehicule.html" target="_blank" class="m-md-0 divInfoListeProduitPrix">
+                                    <p class="fw-bold text-end pe-3 fs-4 mt-2">5 000&euro;</p>
+                                </a>
+                                <h3 class="h4 fw-bold mt-4 mt-md-0">BMW 535i, Navi, Leather, ABS</h3>
+                                <p class="divInfoListeProduitDescription">Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus ea cumque ratione, quidem neque maiores? Corrupti excepturi quam nisi similique? Voluptate optio voluptates dolore corporis fuga necessitatibus eligendi soluta veniam.</p>
+                                <a href="detailsvehicule.html" target="_blank" class="divInfoListeProduitEnsavoir" title="Cliquer pour en savoir plus">&raquo; En savoir plus &laquo;</a>
+                            </div>
+                        </article>
+                    </div>
+                    <!-- fin liste de produits -->
+                </section>
+                <!-- fin colone de gauche -->
+
+                <!-- colone de droite -->
+                <aside class="col-10 col-md-3 justify-content-center p-0 mx-3" id="aside" >
+                    <div id="asideEntete" class="d-flex align-items-center p-4">
+                        <img src="photo/icone-voiture.png" alt="iconevoiture" >
+                        <h5 class="text-white ms-2">Rechercher</h5>
+                    </div>
+                    <div class="border pt-4 shadow">
+                        <div id="asideBody">
+                            <select class="mx-4 my-3 selectAside">
+                                <option selected value="selectype">Type</option>
+                            </select>
+                        </div>
+                        <div>
+                            <select id="selectcarburant" class="mx-4 my-3 selectAside">
+                                <option selected value="selectcarburant">Carburant</option>
+                            </select>
+                        </div>
+                        <div>
+                            <select id="selectmarque" class="mx-4 my-3 selectAside">
+                                <option selected value="selectmarque">Marque</option>
+                            </select>
+                        </div>
+                        <div>
+                            <select id="selectmodèle" class="mx-4 my-3 selectAside">
+                                <option selected value="selectmodèle">Modèle</option>
+                            </select>
+                        </div>
+                        <div>
+                            <select id="selectkilométragemaximal"  class="mx-4 my-3 selectAside">
+                                <option selected value="selectkilométragemaximal">Kilomètrage maximal</option>
+                            </select>
+                        </div>
+                        <div>
+                            <select id="selectancienneté" class="mx-4 my-3 selectAside">
+                                <option selected value="selectancienneté">Ancienneté</option>
+                            </select>
+                        </div>
+                        <div class="my-3">
+                            <label for="prix" class="mx-3 fw-bold">Prix</label>
+                            <input type="range" id="prix" name="prix" class="mx-4 my-3 selectAside"
+                                    min="2000" max="80000">
+                        </div>
+                        <div class="text-center my-5">
+                            <button type="reset" id="recherchesubmit"class="rounded fw-bold text-uppercase reinitialiserAside">réinitialiser</button>
+                        </div>
+                    </div>
+                </aside>
+            </div>
+        </main>
+
+        <footer class="container-fluid">
+            <div>
+                <section class="col-10 row d-flex justify-content-md-center mx-auto pb-4">
+                    <div class="col-12 col-md-3 m-0">
+                        <h6 class="text-uppercase fw-bold"><span>club</span> auto</h6>
+                        <p id="footerClubauto">Lorem ipsum dolor, sit amet consectetur adipisicing accusantium dolores incidunt amet. Asperiores, laborum quas.</p>
+                    </div>
+                    <div class="col-12 col-md-3 m-0">
+                        <h6 class="text-uppercase text-white fw-bold">horaire d'ouverture</h6>
+                        <p id="footerHoraire">lundi - Samedi : <span class="text-white">09:00 - 17h:00</span><br>
+                        Dimanche et jours fériés : <span  class="text-white">Fermé</span></p>
+                    </div>
+                    <div class="col-12 col-md-3 m-0">
+                        <h6 class="text-uppercase">newsletter</h6>
+                        <form id="footerForm">
+                            <div class="input-group" >
+                                <input type="email" name="newsletter" placeholder="Entrez votre email" class="form-control" title="Entrer une adresse mail valide">
+                                <div class="input-group-append">
+                                    <button class="btn" id="footerFormButton" title="Cliquez pour envoyer vos e-mail et recevoir les dernières offres"><img src="photo/icone-news.png" alt="icon-newsletter" style="width:30px;"></button>
+                                </div>
+                            </div>
+                        </form>
+                        <p id="textNewletter">Inscrivez-vous pour recevoir <br> les dernières offres</p>
+                    </div>
+                    <div class="col-12 col-md-3 m-0">
+                        <h6 class="text-uppercase">reseaux sociaux</h6>
+                        <div class="row ">
+                            <a href="" class="p-0 col">
+                                <img class="p-1 iconFooter" src="photo/icon-fb.png" alt="icon-facebook" title="vers la page facebook">
+                            </a>
+                            <a href="" class="p-0 col">
+                                <img class="p-1 iconFooter" src="photo/icon-tw.png" alt="icon-twiter" title="vers la page twytter">
+                            </a>
+                            <a href="" class="p-0 col">
+                                <img class="p-1 iconFooter" src="photo/icon-inst.png" alt="icon-instagramme" title="vers la page instagram">
+                            </a>
+                            <a href=""  class="p-0 col">
+                                <img class="p-1 iconFooter" src="photo/icon-g+.png" alt="icon-google+" title="vers la page google+">
+                            </a>
+                            <a href=""  class="p-0 col">
+                                <img class="p-1 iconFooter" src="photo/icon-yt.png" alt="icon-youtube" title="vers la page youtube">
+                            </a>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <div class="mt-3 py-2" id="copyright">
+                <p class="text-center">Copyright &copy; Club Auto - Tous droits réservés</p>
+            </div>
+        </footer>
+        <script src="java/jquery-3.6.0.slim.js"></script>
+        <script src="java/bootstrap.bundle.min.js"></script>
+    </body>
+</html>

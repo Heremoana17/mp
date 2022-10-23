@@ -1,0 +1,509 @@
+/****************************************************** STYLES GENERAUX **************************************************/
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+
+:root{
+    --white: #ffffff;
+    --orange: rgba(250, 182, 55, 0.9);
+    --rouge: rgba(255, 72, 72, 0.9);
+    --marron: #cc6119;
+    --gris: rgba(236, 239, 243, 0.737);
+    --gris-foncé: #232628;
+    --bleu: #6c98e1;
+}
+.nv:hover{
+    background-color: #cc6119 !important;
+    color: #ffffff !important;
+}
+.accessibility{
+    position: absolute;
+    left: -15000px;
+}
+.detail:focus{
+    border-top: solid 3px var(--marron) !important;
+    color: var(--gris-foncé) !important;
+    font-weight: 700 !important;
+}
+
+/************************************************* styles du header des pages *************************************************/
+
+/****************classe globaux********************/
+
+/* pour tous les icone du header */
+.iconHeader{
+    height: 40px;
+}
+/*pour les titre du header*/
+.titreHeader{
+    color:var(--marron);
+}
+
+/****************style pour chaques div************/
+
+#headerIndex{
+    font-family: Montserrat;
+}
+/* pour la premiere barre du header */
+#sectionHeader{
+    font-size: 0.7em; 
+    background-color: var(--gris-foncé); 
+    background-repeat: no-repeat;
+}
+/* botton tuggle en responssive */
+#tuggleHeader{
+    background-color: var(--gris-foncé);
+}
+/* div pour les horaires d'ouverture */
+#divHoraire span{
+    color:var(--white); 
+    font-size: 1.2em;
+}
+/* div pour les icons facebook et twiter */
+#divIconsReseauxSociaux a{
+    text-decoration: none;
+}
+/*********************************************** fin des styles de le header des pages****************************************/
+
+
+/*********************************************************** style pour la page index ************************************************/
+
+/******************************** background img ******************************/
+#divBackgroundImageIndex{
+    background-image:url(/photo/vehicule1.jpg); 
+    background-repeat: no-repeat; 
+    background-size: cover; 
+    height: 600px; 
+    font-family:Montserrat;
+}
+/****************** barre de navigation */
+#navIndex{
+    font-size: 0.8em; 
+    height: 50px; 
+    margin-left:-12px; 
+    margin-right: -12px;
+}
+/* pour le lien actif */
+#selectedPage{
+    background-color: var(--marron)
+}
+#selectedPageselect{
+    color:var(--white); 
+    height: 50px; 
+    width: 100px;
+}
+/* pour les liens non actif */
+.nonSelectedpage{
+    color:var(--gris-foncé); 
+    height: 50px; 
+    width: 100px;
+}
+/***************************** fin des style pour background img******************/
+
+/***************************** style pour le slogan*************/
+#slogan{
+    background-color:var(--gris-foncé); 
+    height: 100px; 
+    font-family:Montserrat;
+}
+#slogan p{
+    color:var(--white);
+}
+#slogan p span{
+    color: var(--marron)
+}
+/***************************** fin de style pour le slogan*******/
+
+/*******************************************style pour le main*************************/
+/***************************** article 1************************/
+#article1 h3, #article2 h3{
+    color:var(--gris-foncé); 
+    font-family: montserrat;
+}
+#article1 h3 span{
+    color:var(--marron);
+}
+/***************************** article 2**********************/
+#article2 p{
+    font-size:0.8em; 
+    margin-top:80px; 
+    font-family: montserrat;
+}
+#article2 ul{
+    list-style-image:url(/photo/V.png); 
+    margin-top: 20px; 
+    font-size:0.9em;
+}
+/*******************************************fin des styles pour le main******************************/
+
+/*******************************************style pour la section louez-achetez****************************/
+#sectionLouezAchetez{
+    background-image:url(/photo/vente-location.jpg); 
+    background-repeat: no-repeat; 
+    background-size: cover;
+}
+#sectionLouezAchetez > div{
+    padding-top: 110px;
+    padding-bottom: 120px;
+}
+#sectionLouezAchetez a{
+    font-family: montserrat; 
+    font-size: 0.8em; 
+    transition: 0.5s;
+}
+#sectionLouezAchetez a:hover{
+    transform: scale(1.05);
+}
+#sectionLouezAchetez #louez{
+    background-color:var(--orange); 
+    height: 250px; ;
+    margin:15px; 
+    text-decoration: none;
+}
+#sectionLouezAchetez #achetez{
+    background-color:var(--rouge); 
+    height: 250px; 
+    margin:15px; 
+    text-decoration: none;
+}
+#sectionLouezAchetez h3{
+    color:var(--gris-foncé)
+}
+/******************************************fin style pour la section louez-achetez*************************/
+
+/******************************************styles pour la section vehicule recents********************************/
+#sectionVehiculeRecent{
+    background-color: #232628; 
+    font-family: montserrat; 
+    color:var(--white); 
+    padding: 30px;
+}
+#sectionVehiculeRecent > div{
+    border-top:solid 3px var(--marron); 
+    padding-top:30px; 
+    margin-top: 12px;
+}
+/********classe pour chaque card************/
+.cards{
+    width:350px;
+    transition: 0.5s;
+}
+.cards:hover{
+    transform: scale(1.05);
+}
+.cards a{
+    text-decoration: none; 
+    color:var(--white);
+}
+.divImgVehiculeRecent{
+    width:350px;
+}
+.divInfosVehiculeRecent{
+    background-color:gray; width:350px;
+}
+.boxPrix{
+    background-color:var(--bleu);
+    height:45px; 
+    width: 90px; 
+    padding-top: 11px;
+}
+.boxPrixPromo{
+    background-color:var(--bleu);
+    height:45px; 
+    width: 90px; 
+    height: 55px; 
+    padding-top: 5px;
+}
+.boxPrixPromo span{
+    color:var(--gris-foncé); 
+    font-weight:500; 
+    font-size: 0.9em;
+}
+/****************************************** fin styles pour la section vehicule recents*********************/
+
+/****************************************** style pour la sertion pourquoi nous choisir *************************/
+#sectionPourquoiChoisir{
+    font-family: montserrat;
+}
+#sectionPourquoiChoisir h2{
+    font-weight: 800;
+}
+#sectionPourquoiChoisir div{
+    margin-top: 40px;
+}
+#buttonPourquoiNousChoisir{
+    background-color:var(--bleu); 
+    text-decoration: none; 
+    font-size: 0.9em; 
+    width: 220px;
+}
+/* classe pour chaque div */
+.divInfoPourquoiChoisir{
+    width:270px;
+}
+.divInfoPourquoiChoisir img{
+    width:60px;
+}
+.divInfoPourquoiChoisirText{
+    font-size: 0.8em; 
+    font-weight: 500;
+}
+/*****************************************fin style pour la sertion pourquoi nous choisir*************************/
+
+/*****************************************style pour section clubauto*********************************************/
+#sectionClubAuto{
+    background-image:url(/photo/vehicule3.jpg); 
+    background-position: top; 
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    font-family: montserrat;
+}
+#sectionClubAuto div{
+    background-color:var(--orange); 
+    padding: 60px; 
+    margin-top: 100px; 
+    margin-bottom: 80px;
+}
+#sectionClubAuto div h1{
+    font-weight:800;
+}
+#sectionClubAuto div p{
+    font-weight: 500;
+}
+/******************************************Fin des styles pour section clubAuto***********************************/
+
+/***********************************************************Fin des style pour la page index*****************************************/
+
+
+/***********************************************************styles pour la page vente et location************************************************/
+/******************************** background img ******************************/
+#divBackgroundImageVenteLocation{
+    background-image:url(/photo/vente-location.jpg); 
+    filter: brightness(50%); 
+    background-repeat: no-repeat; 
+    background-size: cover; 
+    background-position: 50%; 
+    height: 240px; 
+    font-family:Montserrat;
+}
+/****************** barre de navigation *****************************************/
+#navVenteLocation{
+    margin-top: -240px; 
+    z-index: 100; 
+    position: absolute; 
+    font-family:Montserrat;
+}
+#navVenteLocationNav{
+    font-size: 0.8em; 
+    height: 50px; 
+    margin-left:-12px; 
+    margin-right: -12px;
+}
+/****************** slogan dans l'image de fon et background img en responssive**********/
+.sloganBackgroundImage{
+    font-family: Montserrat;
+}
+.sloganBackgroundImage h2{
+    color: var(--white); 
+    position: absolute; 
+    z-index: 100; 
+    margin-top:-150px; 
+    margin-left: 150px;
+}
+.sloganBackgroundImage div{
+    background-image:url(/photo/vente-location.jpg); 
+    background-size: cover; 
+    filter:brightness(70%); 
+    height: 340px; 
+    font-family:Montserrat;
+}
+#sloganBackgroundImageH2{
+    margin-top: 120px;
+}
+
+
+/******************** Style pour le main ********************************/
+#choixMultiple{
+    font-family: open sans;
+}
+#choixMultiple label{
+    font-size:0.8em
+}
+#selectvente{
+    border:none; 
+    font-size:0.9em
+}
+/************style pour liste de produit********************************/
+.divInfoListeProduit{
+    font-family:montserrat;
+}
+.divInfoListeProduitPrix{
+    background-color: #6c98e1; 
+    width: 150px; 
+    height: 50px; 
+    float: right; 
+    margin-top:-50px; 
+    text-decoration: none;
+}
+.divInfoListeProduit > a p{
+    color:var(--white);
+}
+.divInfoListeProduitDescription{
+    font-family: open sans 
+}
+.divInfoListeProduitEnsavoir{
+    text-decoration:none; 
+    font-family: open sans; 
+    color:#232628
+}
+/******************** Fin style pour le main ********************************/
+
+/**********************style pour le aside***********************************/
+#aside{
+    margin-top: -30px; 
+    font-family: montserrat; 
+    z-index: 100;
+}
+#asideEntete{
+    background-color:var(--gris-foncé);
+}
+#asideEntete img{
+    width:50px;
+}
+.selectAside{
+    border: none; 
+    width: 80%;
+}
+.reinitialiserAside{
+    border: none; 
+    color: #ffffff; 
+    background-color: #6c98e1; 
+    width: 200px; 
+    height: 50px;
+}
+/******************************fin style pour le aside***********************************/
+
+/***********************************************************fin styles pour la page vente et location************************************************/
+
+/***********************************************************styles pour la page détailsvehicule******************************************************/
+/*style pour le fil d'ariane*/
+#mainDetailVehicule ol{
+    font-size:0.8em;
+}
+/*style pour la section du titre et photo du produit*/
+#mainDetailVehicule section{
+    font-family: montserrat;
+}
+/*style pour le descriptif du produit*/
+#descriptifmainDetailVehicule{
+    background-color:var(--gris-foncé);
+}
+#descriptifmainDetailVehicule button{
+    color:var(--white); 
+    font-weight: 500; 
+    height: 50px; 
+    margin-top:-2px;
+}
+#divMytabContent{
+    font-family: open sans;
+}
+#enteteDescription{
+    font-size: 1.2em;
+}
+#divMytabContent div div {
+    border-left:solid 4px var(--marron); 
+    font-style: italic;
+}
+#divMytabContent div h6{
+    font-family:montserrat;
+}
+#divMytabContent div ul{
+    list-style-image:url(/photo/V.png);
+}
+
+/***********************************************************fin styles pour la page détailsvehicule******************************************************/
+
+/***********************************************************style pour la page contact*******************************************************************/
+#divBackgroundImageContact{
+    background-image:url(/photo/vehicule3.jpg);
+    background-size: cover; 
+    background-position:top; 
+    background-repeat: no-repeat; 
+    height:350px;
+}
+#navContact{
+    font-family:Montserrat
+}
+#navContactNav{
+    font-size: 0.8em; 
+    height: 50px; 
+    margin-left:-12px; 
+    margin-right: -12px;
+}
+#mainContact{
+    font-family: montserrat
+}
+#mainContact > div {
+    margin-top:-150px; 
+    box-shadow: 2px 6px 35px -2px rgba(0,0,0,0.3);
+}
+.mainContactLabel{
+    font-weight:600;
+}
+.mainContactInput{
+    border:none;
+}
+#mainContact textarea{
+    resize:none; 
+    border: none; 
+    height: 150px;
+}
+#mainContact button{
+    background-color:var(--bleu);
+}
+
+/***********************************************************fin style pour la page contact*******************************************************************/
+
+/***********************************************************style pour le footer*****************************************************/
+footer{
+    background-color:var(--gris-foncé); 
+    font-family: montserrat; 
+    color:var(--gris);
+}
+footer div section{
+    border-bottom: solid 2px var(--gris); 
+    padding-top:70px;
+}
+footer div section div h6 span{
+    color:var(--bleu);
+}
+#footerClubauto{
+    font-size:0.9em;
+}
+#footerHoraire{
+    font-weight:500; 
+    font-size:0.9em;
+}
+#footerForm > div{
+    width:250px;
+}
+#footerForm div div{
+    margin-left:-3px;
+}
+#footerFormButton{
+    background-color:var(--marron);
+}
+#textNewletter{
+    font-size:0.9em; 
+}
+#copyright p{
+    color:var(--gris)
+}
+/*classe pour les icons du footer*/
+.iconFooter{
+    width:60px;
+}
+
+
+
+

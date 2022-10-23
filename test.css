@@ -1,0 +1,16 @@
+#section{
+    background-image: url(/photo/vehicule1.jpg);
+    height: 600px;
+}
+ul{
+    text-decoration: none;
+    display: flex;
+}
+#section2{
+    background-image: url(/photo/vente-location.jpg);
+    display: flex;
+}
+.div{
+    background-color: brown;
+    margin: 50px;
+}
